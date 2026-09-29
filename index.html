@@ -138,14 +138,14 @@ footer{background:var(--ink);color:#9C98B8;font-size:12px;padding:26px 0;text-al
 </style>
 </head>
 <body>
-<nav><div class="wrap"><b>SOFIYA<i>.</i>BANO</b><div class="lk"><a href="#seo">SEO</a><a href="#social">Social</a><a href="#projects">Projects</a><a href="#links">Live Links</a><a class="btn s" href="https://docs.google.com/spreadsheets/d/1h7BHhCMQOz3woXLFWzBk3YTHoMi5LQMrNT3ntf021fI/edit?gid=1046290858#gid=1046290858" target="_blank" rel="noopener">View SEO Work</a></div></div></nav>
+<nav><div class="wrap"><b>SOFIYA<i>.</i>BANO</b><div class="lk"><a href="#seo">SEO</a><a href="#social">Social</a><a href="#projects">Projects</a><a class="btn s" href="https://docs.google.com/spreadsheets/d/1h7BHhCMQOz3woXLFWzBk3YTHoMi5LQMrNT3ntf021fI/edit?gid=1046290858#gid=1046290858" target="_blank" rel="noopener">View SEO Work</a></div></div></nav>
 
 <header class="hero"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
 <div class="wrap"><div class="eyebrow">DIGITAL MARKETING PORTFOLIO</div>
 <h1 id="name"></h1>
 <p class="lead">I don't just know digital marketing. I have actually worked on it.<br>Hands-on with <span class="swap" id="swap">SEO</span></p>
 <div class="chips" id="hchips"></div>
-<div class="btns"><a class="btn" href="#projects">See my work</a><a class="btn w" href="#links">Live links</a></div></div><div class="scroll"></div></header>
+<div class="btns"><a class="btn" href="#projects">See my work</a></div></div><div class="scroll"></div></header>
 <div class="marq"><div id="mq"></div></div>
 
 <section id="about"><div class="wrap split"><div class="rv l"><div class="tag">About my work</div><h2>Hands-on work, <em>not just theory.</em></h2><p class="mut">I work across SEO, social media and content creation on live brand projects. From keyword research and backlinks to static and carousel posts, the work here is work I did.</p></div>
@@ -180,10 +180,6 @@ footer{background:var(--ink);color:#9C98B8;font-size:12px;padding:26px 0;text-al
 
 <section id="others"><div class="wrap"><div class="tag rv">Other projects</div><h2 class="rv">More brands, <em>more content</em></h2><div class="grid g2" style="margin-top:44px" id="pcards"></div></div></section>
 
-<section id="links" style="background:var(--card)"><div class="wrap"><div class="tag rv">Live work & links</div><h2 class="rv">See it <em>live</em></h2>
-<div class="split" style="align-items:start;margin-top:44px"><div id="rows"></div>
-<div class="card rv r" style="background:var(--ink);color:#fff;border:0"><div class="tag" style="color:var(--mint);font-size:12px">LinkedIn work</div><h3 style="font-size:32px">Reference</h3><p style="margin-top:10px;opacity:.8">LinkedIn work / reference link, related to the work in this portfolio.</p><div class="btns"><a class="btn" href="https://www.linkedin.com/in/sunil-jat/" target="_blank" rel="noopener">View LinkedIn Work</a><a class="btn" style="background:var(--dk)" href="https://www.linkedin.com/company/jigrotech/" target="_blank" rel="noopener">JigroTech LinkedIn</a></div></div></div></div></section>
-
 <section class="vio contact" id="contact"><div class="blob" style="width:300px;height:300px;background:var(--coral);right:-60px;top:-60px"></div><div class="wrap" style="position:relative"><div class="tag rv" style="color:#fff">Let's work together</div><h2 class="rv">Thank you.</h2><p class="mut rv" style="color:#fff;font-size:22px">I don't just know digital marketing. I have actually worked on it.</p>
 <div class="card rv" style="margin-top:34px;max-width:560px"><h3>SOFIYA BANO</h3><p>SEO · Social Media · Content · Digital Marketing</p><p style="margin-top:10px" id="contact-line">Email: [add your email] &nbsp; Phone: [add your number]</p></div>
 <div class="btns"><a class="btn k" href="https://docs.google.com/spreadsheets/d/1h7BHhCMQOz3woXLFWzBk3YTHoMi5LQMrNT3ntf021fI/edit?gid=1046290858#gid=1046290858" target="_blank" rel="noopener">View SEO Work</a><a class="btn k" href="https://jigrotech.com/" target="_blank" rel="noopener">View JigroTech</a></div></div></section>
@@ -210,10 +206,8 @@ $('tools').innerHTML=[['SEMrush','--vio'],['Ahrefs','--coral'],['Excel','--mint'
 $('jt-chips').innerHTML=chips(['Creative Research','Content Research','Creative Concepts','Static Posts','Carousel Posts','Captions','Hashtag Research','Content Planning','SEO Work']);
 $('soc-chips').innerHTML=chips(['Static Posts','Carousel Posts','Captions','Hashtags','Content Planning','Instagram','LinkedIn']);
 $('strat').innerHTML=[['Creative Research','Exploring ideas, formats and references'],['Content Research','Understanding topics and audience'],['Creative Concepts','Turning ideas into post concepts'],['Content Planning','Organizing what to post and when'],['Captions','Writing the copy for each post'],['Hashtag Research','Choosing hashtags for reach']].map(([t,d],i)=>`<div class="card rv" style="--d:${(i%3)*.12}s"><div class="num" style="background:${['#6C4DFF','#FF6B57','#27D3B0','#FFC857','#6C4DFF','#FF6B57'][i]}">${i+1}</div><h3>${t}</h3><p>${d}</p></div>`).join('');
-const P=[["Jigro MediTech",'Instagram content','#6C4DFF',[['View Instagram','https://www.instagram.com/jigromeditech/']]],["Jakhar's Power Point",'EV station · Website and Instagram','#FF6B57',[['View Website','https://jakharspowerpoint.com/'],['View Instagram','https://www.instagram.com/jakharspowerpoint/']]],["Myo Tarot & Crystals",'Tarot reading · Instagram content','#14112B',[['View Instagram','https://www.instagram.com/_myo_tarot_and_crystals_/']]],["JigroPay",'Payments · Instagram content','#27D3B0',[['View Instagram','https://www.instagram.com/jigropay/']]]];
+const P=[["Jigro MediTech",'Industry: Healthcare / Medical Education','#6C4DFF',[['View Website','https://jigromeditech.com/'],['View Instagram','https://www.instagram.com/jigromeditech/']]],["Jakhar's Power Point",'Industry: EV / Electric Mobility','#FF6B57',[['View Website','https://jakharspowerpoint.com/'],['View Instagram','https://www.instagram.com/jakharspowerpoint/']]],["Myo Tarot & Crystals",'Industry: Tarot & Spirituality','#14112B',[['View Website','https://myotarot.com/'],['View Instagram','https://www.instagram.com/_myo_tarot_and_crystals_/']]],["JigroPay",'Industry: FinTech / Digital Payments','#27D3B0',[['View Website','https://jigropay.com/'],['View Instagram','https://www.instagram.com/jigropay/']]]];
 $('pcards').innerHTML=P.map(([n,d,c,b],i)=>`<div class="pcard rv" style="--d:${i*.1}s;background:${c};${c=='#27D3B0'?'color:#14112B':''}${c=='#14112B'?'border:1px solid #3A3560':''}"><h3>${n}</h3><p>${d}</p><div class="btns">${b.map(([t,u])=>`<a class="btn s w" href="${u}" target="_blank" rel="noopener">${t}</a>`).join('')}</div></div>`).join('');
-const R=[['JigroTech','Technology',[['Website','https://jigrotech.com/'],['Instagram','https://www.instagram.com/jigrotech/'],['LinkedIn','https://www.linkedin.com/company/jigrotech/'],['SEO Work',SEO]]],['Jigro MediTech','Healthcare / Medical Education',[['Instagram','https://www.instagram.com/jigromeditech/']]],["Jakhar's Power Point",'EV / Electric Mobility',[['Website','https://jakharspowerpoint.com/'],['Instagram','https://www.instagram.com/jakharspowerpoint/']]],['Myo Tarot & Crystals','Tarot & Spirituality',[['Instagram','https://www.instagram.com/_myo_tarot_and_crystals_/']]],['JigroPay','FinTech / Digital Payments',[['Instagram','https://www.instagram.com/jigropay/']]]];
-$('rows').innerHTML=R.map(([n,ind,b],i)=>`<div class="row rv l" style="--d:${i*.08}s"><div class="hd"><b>${n}</b><span class="ind">Industry: ${ind}</span></div><div class="bt${b.length==1?' one':''}">${b.map(([t,u])=>lk('View '+t,u)).join('')}</div></div>`).join('');
 
 
 // Screenshots: put files in the images/ folder named as in data-img (e.g. images/seo-sheet.jpg). .jpg .png .webp all work.
