@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sofiya Bano | Digital Marketing Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14112B;--vio:#6C4DFF;--coral:#FF6B57;--mint:#27D3B0;--gold:#FFC857;--paper:#FAF7F2;--card:#fff;--line:#EFE9DF;--text:#14112B;--mut:#6E6A85;--dk:#26224A;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#1B1836;--card:#241F45;--line:#3A3560;--text:#F4F2FF;--mut:#B5B1D3}}
+:root[data-theme="dark"]{--paper:#1B1836;--card:#241F45;--line:#3A3560;--text:#F4F2FF;--mut:#B5B1D3}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box;margin:0}
+body{background:var(--paper);color:var(--text);font-family:Sora,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:auto;padding:0 24px}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;backdrop-filter:blur(14px);background:rgba(20,17,43,.78);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+nav b{font-weight:800;letter-spacing:.5px}nav b i{color:var(--coral);font-style:normal}
+nav .lk{display:flex;gap:22px;font-size:13px;align-items:center}
+nav .lk a:not(.btn){opacity:.8;transition:.2s}nav .lk a:not(.btn):hover{opacity:1;color:var(--mint)}
+.btn{display:inline-block;padding:13px 24px;border-radius:99px;font-weight:800;font-size:12.5px;letter-spacing:.8px;text-transform:uppercase;background:var(--coral);color:#fff;transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 12px 26px rgba(108,77,255,.35)}
+.btn.v{background:var(--vio)}.btn.k{background:var(--ink)}.btn.m{background:var(--mint);color:var(--ink)}.btn.w{background:#fff;color:var(--ink)}.btn.s{padding:9px 16px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+section{padding:110px 0;position:relative;overflow:hidden}
+.dark{background:var(--ink);color:#fff}.dark .mut{color:#C9C5E6}
+.cor{background:var(--coral);color:#fff}.vio{background:var(--vio);color:#fff}
+.tag{font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.tag:before{content:"";width:0;height:3px;background:var(--coral);transition:width .9s .2s}.in .tag:before,.tag.in:before{width:44px}
+h1,h2{font-weight:800;line-height:1.02;letter-spacing:-1.5px}
+h2{font-size:clamp(38px,6vw,72px)}h2 em,h1 em{font-style:normal;color:var(--vio)}.dark h2 em{color:var(--mint)}.cor h2 em{color:var(--ink)}
+.mut{color:var(--mut);font-size:18px;max-width:520px;margin-top:20px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{padding:8px 16px;border-radius:99px;background:var(--card);border:1px solid var(--line);font-size:13px;font-weight:600;transition:.25s}
+.chip:hover{transform:translateY(-3px);border-color:var(--vio)}
+.dark .chip{background:var(--dk);border-color:transparent;color:#fff}.cor .chip{background:#fff;color:var(--ink)}
+.grid{display:grid;gap:22px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:30px;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-8px);box-shadow:0 22px 44px rgba(20,17,43,.14)}
+.dark .card{background:var(--dk);border:0}
+.card h3{font-size:22px;margin-bottom:8px}.card p{font-size:14.5px;opacity:.75}
+.num{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-weight:800;color:#fff;margin-bottom:18px}
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;background:var(--ink);color:#fff;padding-top:110px}
+.hero h1{font-size:clamp(64px,13vw,168px)}
+.hero h1 span{display:inline-block;opacity:0;transform:translateY(80px) rotate(6deg);animation:up .9s cubic-bezier(.2,.9,.3,1.2) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.eyebrow{color:var(--mint);font-weight:800;letter-spacing:3px;font-size:13px;margin-bottom:18px;animation:fade 1s both}
+.hero p.lead{font-size:clamp(18px,2.4vw,26px);color:#C9C5E6;max-width:600px;margin-top:26px;animation:fade 1s 1s both}
+.swap{color:var(--coral);font-weight:800;display:inline-block;min-width:1px}
+.hero .chips{animation:fade 1s 1.3s both}.hero .btns{animation:fade 1s 1.5s both}
+@keyframes fade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.blob{position:absolute;border-radius:50%;filter:blur(2px);animation:float 9s ease-in-out infinite}
+@keyframes float{50%{transform:translate(-30px,-40px) scale(1.06)}}
+.hero .b1{width:min(46vw,520px);aspect-ratio:1;background:var(--vio);right:-8%;top:8%}
+.hero .b2{width:220px;height:220px;background:var(--coral);right:12%;bottom:6%;animation-delay:-3s}
+.hero .b3{width:90px;height:90px;background:var(--mint);right:38%;bottom:14%;animation-delay:-6s}
+.hero .wrap{position:relative;z-index:2}
+.scroll{position:absolute;bottom:28px;left:50%;width:2px;height:46px;background:linear-gradient(#fff,transparent);animation:sc 1.8s infinite}
+@keyframes sc{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.marq{background:var(--coral);color:#fff;overflow:hidden;white-space:nowrap;padding:16px 0;font-weight:800;letter-spacing:2px;font-size:14px}
+.marq div{display:inline-block;animation:mq 26s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* placeholders */
+.ph{border:2px dashed var(--line);border-radius:16px;display:grid;place-items:center;text-align:center;color:var(--mut);font-size:12px;font-weight:600;background:var(--paper);min-height:120px;padding:14px}
+.ph small{display:block;font-weight:400;opacity:.8;margin-top:2px}
+.dark .ph,.cor .ph{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3);color:#fff}
+.browser{background:var(--card);border-radius:18px;border:1px solid var(--line);overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.25);color:var(--text)}
+.browser .bar{background:var(--line);padding:11px 14px;display:flex;gap:7px}.bar i{width:10px;height:10px;border-radius:50%;background:var(--coral)}.bar i:nth-child(2){background:var(--gold)}.bar i:nth-child(3){background:var(--mint)}
+.browser .ph{border:0;border-radius:0;min-height:340px;color:var(--mut);background:var(--paper)}
+.phone{background:var(--ink);border-radius:36px;padding:10px;box-shadow:0 26px 50px rgba(20,17,43,.3);transition:transform .4s}
+.phone:hover{transform:translateY(-12px) rotate(-2deg)}
+.phone .ph{min-height:300px;overflow:hidden;border-radius:28px;border:0;background:var(--paper);color:var(--mut)}
+.phones{display:flex;gap:18px;justify-content:center;align-items:flex-start}.phones .phone{flex:1;max-width:190px}.phones .phone:nth-child(2){margin-top:44px}
+.post{background:var(--card);border-radius:18px;padding:12px;color:var(--text);box-shadow:0 14px 30px rgba(0,0,0,.15);transition:transform .3s}.post:hover{transform:rotate(-2deg) scale(1.03)}
+.post .ph{aspect-ratio:1;min-height:0;color:var(--mut);background:var(--paper);border-color:var(--line)}
+.post .hd{display:flex;align-items:center;gap:8px;margin-bottom:10px}.post .hd i{width:22px;height:22px;border-radius:50%;background:var(--vio)}.post .hd s{height:7px;width:70px;background:var(--line);border-radius:4px}
+.slides{display:flex;gap:14px;margin-top:18px;overflow-x:auto;padding-bottom:6px}.slides .ph{flex:0 0 150px;aspect-ratio:1;min-height:0;background:#fff;color:var(--mut);border-color:transparent}
+.big{font-size:clamp(70px,14vw,180px);font-weight:800;line-height:.9;letter-spacing:-4px}.big em{color:var(--vio);font-style:normal;display:block}
+/* flow */
+.flow{counter-reset:s}.flow .card{position:relative}
+.tools .card{text-align:center;font-size:24px;font-weight:800;color:#fff;padding:36px 20px;border:0}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:18px 26px;background:var(--card);border:1px solid var(--line);border-radius:18px;margin-bottom:12px;transition:.3s}
+.row:hover{transform:translateX(8px);border-color:var(--vio)}.row b{font-size:19px}.row div{display:flex;gap:8px;flex-wrap:wrap}
+.pcard{border-radius:28px;padding:34px;color:#fff;transition:transform .35s}.pcard:hover{transform:translateY(-8px) rotate(-.6deg)}.pcard h3{font-size:30px;letter-spacing:-.5px}.pcard p{opacity:.85;margin-top:4px}
+.contact h2{font-size:clamp(56px,12vw,150px)}
+footer{background:var(--ink);color:#9C98B8;font-size:12px;padding:26px 0;text-align:center;letter-spacing:1px}
+/* reveal */
+.rv{opacity:0;transform:translateY(40px);transition:opacity .8s var(--d,0s),transform .8s var(--d,0s) cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}.rv.l{transform:translateX(-50px)}.rv.r{transform:translateX(50px)}.rv.in.l,.rv.in.r{transform:none}
+@media(max-width:860px){.split,.g2,.g3,.g4{grid-template-columns:1fr}nav .lk a:not(.btn){display:none}section{padding:80px 0}.phones{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero h1 span{opacity:1;transform:none}}
+.artband{background:var(--card);padding:0 0 100px}.artband .tile{aspect-ratio:4/5;border-radius:26px;overflow:hidden;transition:transform .4s}.artband .tile:hover{transform:translateY(-8px) rotate(-1deg)}.artband svg{width:100%;height:100%;display:block}.artband .tile svg *{transform-box:fill-box;transform-origin:center;animation:float 8s ease-in-out infinite}.artband .tile svg *:nth-child(2n){animation-delay:-3s}.artband .tile svg *:nth-child(3n){animation-delay:-5s}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>SOFIYA<i>.</i>BANO</b><div class="lk"><a href="#seo">SEO</a><a href="#social">Social</a><a href="#projects">Projects</a><a href="#links">Live Links</a><a class="btn s" href="https://docs.google.com/spreadsheets/d/1h7BHhCMQOz3woXLFWzBk3YTHoMi5LQMrNT3ntf021fI/edit?gid=1046290858#gid=1046290858" target="_blank" rel="noopener">View SEO Work</a></div></div></nav>
+
+<header class="hero"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="wrap"><div class="eyebrow">DIGITAL MARKETING PORTFOLIO</div>
+<h1 id="name"></h1>
+<p class="lead">I don't just know digital marketing. I have actually worked on it.<br>Hands-on with <span class="swap" id="swap">SEO</span></p>
+<div class="chips" id="hchips"></div>
+<div class="btns"><a class="btn" href="#projects">See my work</a><a class="btn w" href="#links">Live links</a></div></div><div class="scroll"></div></header>
+<div class="marq"><div id="mq"></div></div>
+
+<section id="about"><div class="wrap split"><div class="rv l"><div class="tag">About my work</div><h2>Hands-on work, <em>not just theory.</em></h2><p class="mut">I work across SEO, social media and content creation on live brand projects. From keyword research and backlinks to static and carousel posts, the work here is work I did.</p></div>
+<div class="grid g2" id="about-cards"></div></div></section>
+
+<section style="background:var(--card)" id="skills"><div class="wrap"><div class="tag rv">Skills</div><h2 class="rv">What I bring <em>to the table</em></h2><div class="grid g2" style="margin-top:44px" id="skill-cards"></div></div></section>
+
+<div class="artband"><div class="wrap grid g4" id="art"></div></div>
+<section class="dark" id="seo"><div class="wrap split"><div class="rv l"><div class="tag">SEO work</div><h2>SEO, done <em>hands-on.</em></h2><p class="mut">Real research and link-building work, documented in a working sheet you can open. The frame shows an illustration; open the sheet for the real work.</p><div class="chips" id="seo-chips"></div>
+<div class="btns"><a class="btn" href="https://docs.google.com/spreadsheets/d/1h7BHhCMQOz3woXLFWzBk3YTHoMi5LQMrNT3ntf021fI/edit?gid=1046290858#gid=1046290858" target="_blank" rel="noopener">View SEO Work</a></div></div>
+<div class="rv r"><div class="browser"><div class="bar"><i></i><i></i><i></i></div><div class="ph" data-img="seo-sheet"><div>SEO sheet screenshot<small>screenshot goes here</small></div></div></div><p style="font-size:12px;margin-top:12px;color:#9C98B8">SEO Work / Research Evidence · Google Sheets</p></div></div></section>
+
+<section id="process"><div class="wrap"><div class="tag rv">SEO process & tools</div><h2 class="rv">How the SEO work <em>fits together</em></h2><div class="grid g4 flow" style="margin-top:44px" id="steps"></div>
+<div class="tag rv" style="margin-top:56px;font-size:12px;color:var(--mut)">Tools I work with</div><div class="grid g4 tools" id="tools"></div>
+<div class="btns"><a class="btn k" href="https://docs.google.com/spreadsheets/d/1h7BHhCMQOz3woXLFWzBk3YTHoMi5LQMrNT3ntf021fI/edit?gid=1046290858#gid=1046290858" target="_blank" rel="noopener">View SEO Work</a></div></div></section>
+
+<section id="projects" style="background:var(--card)"><div class="wrap split"><div class="rv l"><div class="tag">Featured project</div><div class="big">JIGRO<em>TECH.</em></div>
+<div class="tag" style="margin-top:34px;font-size:12px;color:var(--coral)">My contribution</div><div class="chips" id="jt-chips" style="margin-top:0"></div>
+<p class="mut" style="font-size:16px">Instagram and LinkedIn content built from idea to plan, plus SEO research documented in a live Google Sheet.</p>
+<div class="btns"><a class="btn" href="https://jigrotech.com/" target="_blank" rel="noopener">View Website</a><a class="btn v" href="https://www.instagram.com/jigrotech/" target="_blank" rel="noopener">View Instagram</a><a class="btn k" href="https://www.linkedin.com/company/jigrotech/" target="_blank" rel="noopener">View LinkedIn</a><a class="btn m" href="https://docs.google.com/spreadsheets/d/1h7BHhCMQOz3woXLFWzBk3YTHoMi5LQMrNT3ntf021fI/edit?gid=1046290858#gid=1046290858" target="_blank" rel="noopener">View SEO Work</a></div></div>
+<div class="phones rv r"><div class="phone"><div class="ph" data-img="jt-1"><div>Static post<small>screenshot goes here</small></div></div></div><div class="phone"><div class="ph" data-img="jt-2"><div>Carousel<small>screenshot goes here</small></div></div></div><div class="phone"><div class="ph" data-img="jt-3"><div>LinkedIn post<small>screenshot goes here</small></div></div></div></div></div></section>
+
+<section class="cor" id="social"><div class="wrap"><div class="split"><div class="rv l"><div class="tag">Social media work</div><h2>Static & <em>Carousel.</em></h2><p class="mut" style="color:#fff">Designed and created by me: creative designs, captions and hashtags, planned for Instagram and LinkedIn.</p><div class="chips" id="soc-chips"></div></div>
+<div class="grid g2 rv r"><div class="post"><div class="hd"><i></i><s></s></div><div class="ph" data-img="static-1"><div>Static post<small>screenshot goes here</small></div></div></div><div class="post"><div class="hd"><i></i><s></s></div><div class="ph" data-img="static-2"><div>Static post<small>screenshot goes here</small></div></div></div></div></div>
+<div class="rv" style="margin-top:40px"><div class="tag" style="font-size:12px;color:var(--ink)">Carousel posts</div><div class="slides"><div class="ph" data-img="slide-1">Slide 1<small>screenshot goes here</small></div><div class="ph" data-img="slide-2">Slide 2<small>screenshot goes here</small></div><div class="ph" data-img="slide-3">Slide 3<small>screenshot goes here</small></div><div class="ph" data-img="slide-4">Slide 4<small>screenshot goes here</small></div></div></div></div></section>
+
+<section class="dark" id="strategy"><div class="wrap"><div class="tag rv">Creative research & content strategy</div><h2 class="rv">From idea <em>to post.</em></h2><div class="grid g3" style="margin-top:44px" id="strat"></div></div></section>
+
+<section id="others"><div class="wrap"><div class="tag rv">Other projects</div><h2 class="rv">More brands, <em>more content</em></h2><div class="grid g2" style="margin-top:44px" id="pcards"></div></div></section>
+
+<section id="links" style="background:var(--card)"><div class="wrap"><div class="tag rv">Live work & links</div><h2 class="rv">See it <em>live</em></h2>
+<div class="split" style="align-items:start;margin-top:44px"><div id="rows"></div>
+<div class="card rv r" style="background:var(--ink);color:#fff;border:0"><div class="tag" style="color:var(--mint);font-size:12px">LinkedIn work</div><h3 style="font-size:32px">Reference</h3><p style="margin-top:10px;opacity:.8">LinkedIn work / reference link, related to the work in this portfolio.</p><div class="btns"><a class="btn" href="https://www.linkedin.com/in/sunil-jat/" target="_blank" rel="noopener">View LinkedIn Work</a><a class="btn" style="background:var(--dk)" href="https://www.linkedin.com/company/jigrotech/" target="_blank" rel="noopener">JigroTech LinkedIn</a></div></div></div></div></section>
+
+<section class="vio contact" id="contact"><div class="blob" style="width:300px;height:300px;background:var(--coral);right:-60px;top:-60px"></div><div class="wrap" style="position:relative"><div class="tag rv" style="color:#fff">Let's work together</div><h2 class="rv">Thank you.</h2><p class="mut rv" style="color:#fff;font-size:22px">I don't just know digital marketing. I have actually worked on it.</p>
+<div class="card rv" style="margin-top:34px;max-width:560px"><h3>SOFIYA BANO</h3><p>SEO · Social Media · Content · Digital Marketing</p><p style="margin-top:10px" id="contact-line">Email: [add your email] &nbsp; Phone: [add your number]</p></div>
+<div class="btns"><a class="btn k" href="https://docs.google.com/spreadsheets/d/1h7BHhCMQOz3woXLFWzBk3YTHoMi5LQMrNT3ntf021fI/edit?gid=1046290858#gid=1046290858" target="_blank" rel="noopener">View SEO Work</a><a class="btn k" href="https://jigrotech.com/" target="_blank" rel="noopener">View JigroTech</a></div></div></section>
+<footer>SOFIYA BANO · DIGITAL MARKETING PORTFOLIO</footer>
+
+<script>
+const $=id=>document.getElementById(id),chips=a=>a.map(s=>`<span class="chip">${s}</span>`).join('');
+const SEO='https://docs.google.com/spreadsheets/d/1h7BHhCMQOz3woXLFWzBk3YTHoMi5LQMrNT3ntf021fI/edit?gid=1046290858#gid=1046290858';
+const lk=(t,u,c='v')=>`<a class="btn s ${c}" href="${u}" target="_blank" rel="noopener">${t}</a>`;
+$('name').innerHTML=['Sofiya','Bano.'].map((w,i)=>`<div>${[...w].map((ch,j)=>`<span style="animation-delay:${.1*(j+i*6)}s">${ch}</span>`).join('')}</div>`).join('');
+$('hchips').innerHTML=chips(['SEO','Social Media','Content Creation','Digital Marketing']).replace(/class="chip"/g,'class="chip" style="background:#26224A;color:#fff;border:0"');
+$('mq').innerHTML=Array(2).fill(['SEO','SOCIAL MEDIA','CONTENT CREATION','DIGITAL MARKETING','KEYWORD RESEARCH','BACKLINKS','STATIC POSTS','CAROUSEL POSTS'].map(s=>s+' &nbsp;✦&nbsp; ').join('')).join('');
+// CONTACT: edit these two values, then the line below updates automatically
+const EMAIL='',PHONE='';
+if(EMAIL||PHONE){document.getElementById('contact-line').innerHTML=[EMAIL&&`<a href="mailto:${EMAIL}" style="text-decoration:underline">${EMAIL}</a>`,PHONE&&`<a href="tel:${PHONE}" style="text-decoration:underline">${PHONE}</a>`].filter(Boolean).join(' &nbsp; ')}
+// rotating word
+const words=['SEO','Social Media','Content Creation','Digital Marketing'];let wi=0;
+setInterval(()=>{const e=$('swap');e.style.transition='opacity .3s';e.style.opacity=0;setTimeout(()=>{wi=(wi+1)%4;e.textContent=words[wi];e.style.opacity=1},300)},2200);
+$('about-cards').innerHTML=[['SEO','Research, on-page, off-page and backlink work','--vio'],['Social Media','Static and carousel content, captions, hashtags','--coral'],['Content','Research, concepts and content planning','--mint'],['Projects',"JigroTech, Jigro MediTech, Jakhar's Power Point, Myo Tarot & Crystals, JigroPay",'--ink']].map(([t,d,c],i)=>`<div class="card rv" style="--d:${i*.12}s;background:var(${c});color:${c=='--mint'?'#14112B':'#fff'};border:0"><div class="num" style="background:rgba(255,255,255,.22)">0${i+1}</div><h3>${t}</h3><p>${d}</p></div>`).join('');
+$('skill-cards').innerHTML=[['SEO','--vio',['Keyword Research','On-Page SEO','Off-Page SEO','Backlink Building','Social Bookmarking','Profile Creation','Referring Domains','DA/PA Research']],['Social Media','--coral',['Static Posts','Carousel Posts','Creative Designs','Captions','Hashtag Research','Content Planning']],['Content','--mint',['Creative Research','Content Research','Creative Concepts','Content Ideas','Content Optimization']],['Tools','--ink',['SEMrush','Ahrefs','Excel','Google Sheets']]].map(([t,c,a],i)=>`<div class="card rv" style="--d:${i*.1}s"><div class="tag" style="font-size:14px;margin-bottom:0"><span style="width:14px;height:14px;border-radius:50%;background:var(${c})"></span>${t}</div><div class="chips">${chips(a)}</div></div>`).join('');
+$('seo-chips').innerHTML=chips(['Keyword Research','On-Page SEO','Off-Page SEO','Backlink Building','Social Bookmarking','Profile Creation','Referring Domains','Content Optimization','DA/PA Research','SEO Research & Analysis']);
+$('steps').innerHTML=[['Keyword Research','Finding what people search for','--vio'],['On-Page SEO','Optimizing content and pages','--coral'],['Off-Page SEO','Backlinks, bookmarking, profiles','--mint'],['Analysis','DA/PA and referring domains','--ink']].map(([t,d,c],i)=>`<div class="card rv" style="--d:${i*.15}s"><div class="num" style="background:var(${c});${c=='--mint'?'color:#14112B':''}">${i+1}</div><h3>${t}</h3><p>${d}</p></div>`).join('');
+$('tools').innerHTML=[['SEMrush','--vio'],['Ahrefs','--coral'],['Excel','--mint'],['Google Sheets','--ink']].map(([t,c],i)=>`<div class="card rv" style="--d:${i*.1}s;background:var(${c});${c=='--mint'?'color:#14112B':''}">${t}</div>`).join('');
+$('jt-chips').innerHTML=chips(['Creative Research','Content Research','Creative Concepts','Static Posts','Carousel Posts','Captions','Hashtag Research','Content Planning','SEO Work']);
+$('soc-chips').innerHTML=chips(['Static Posts','Carousel Posts','Captions','Hashtags','Content Planning','Instagram','LinkedIn']);
+$('strat').innerHTML=[['Creative Research','Exploring ideas, formats and references'],['Content Research','Understanding topics and audience'],['Creative Concepts','Turning ideas into post concepts'],['Content Planning','Organizing what to post and when'],['Captions','Writing the copy for each post'],['Hashtag Research','Choosing hashtags for reach']].map(([t,d],i)=>`<div class="card rv" style="--d:${(i%3)*.12}s"><div class="num" style="background:${['#6C4DFF','#FF6B57','#27D3B0','#FFC857','#6C4DFF','#FF6B57'][i]}">${i+1}</div><h3>${t}</h3><p>${d}</p></div>`).join('');
+const P=[["Jigro MediTech",'Instagram content','#6C4DFF',[['View Instagram','https://www.instagram.com/jigromeditech/']]],["Jakhar's Power Point",'Website and Instagram','#FF6B57',[['View Website','https://jakharspowerpoint.com/'],['View Instagram','https://www.instagram.com/jakharspowerpoint/']]],["Myo Tarot & Crystals",'Instagram content','#14112B',[['View Instagram','https://www.instagram.com/_myo_tarot_and_crystals_/']]],["JigroPay",'Instagram content','#27D3B0',[['View Instagram','https://www.instagram.com/jigropay/']]]];
+$('pcards').innerHTML=P.map(([n,d,c,b],i)=>`<div class="pcard rv" style="--d:${i*.1}s;background:${c};${c=='#27D3B0'?'color:#14112B':''}${c=='#14112B'?'border:1px solid #3A3560':''}"><h3>${n}</h3><p>${d}</p><div class="btns">${b.map(([t,u])=>`<a class="btn s w" href="${u}" target="_blank" rel="noopener">${t}</a>`).join('')}</div></div>`).join('');
+const R=[['JigroTech',[['Website','https://jigrotech.com/'],['Instagram','https://www.instagram.com/jigrotech/'],['LinkedIn','https://www.linkedin.com/company/jigrotech/'],['SEO Work',SEO]]],['Jigro MediTech',[['Instagram','https://www.instagram.com/jigromeditech/']]],["Jakhar's Power Point",[['Website','https://jakharspowerpoint.com/'],['Instagram','https://www.instagram.com/jakharspowerpoint/']]],['Myo Tarot & Crystals',[['Instagram','https://www.instagram.com/_myo_tarot_and_crystals_/']]],['JigroPay',[['Instagram','https://www.instagram.com/jigropay/']]]];
+$('rows').innerHTML=R.map(([n,b],i)=>`<div class="row rv l" style="--d:${i*.08}s"><b>${n}</b><div>${b.map(([t,u])=>lk('View '+t,u)).join('')}</div></div>`).join('');
+
+
+// Illustrated placeholders (not real work). Real screenshots in images/ replace these automatically.
+const svg=(vb,bg,inner)=>`<svg viewBox="${vb}" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;display:block"><rect width="100%" height="100%" fill="${bg}"/>${inner}</svg>`;
+const lines=(x,y,w,c='#fff')=>`<rect x="${x}" y="${y}" width="${w}" height="12" rx="6" fill="${c}"/><rect x="${x}" y="${y+20}" width="${w*.65}" height="8" rx="4" fill="${c}" opacity=".55"/>`;
+const ART={
+ 'static-1':()=>svg('0 0 200 200','#6C4DFF',`<circle cx="150" cy="52" r="52" fill="#FF6B57"/><circle cx="38" cy="150" r="20" fill="#27D3B0"/><circle cx="170" cy="170" r="10" fill="#FFC857"/>${lines(20,98,120)}<rect x="20" y="146" width="70" height="24" rx="12" fill="#fff"/>`),
+ 'static-2':()=>svg('0 0 200 200','#FF6B57',`<rect x="-20" y="110" width="240" height="120" fill="#14112B" transform="rotate(-8 100 150)"/><circle cx="60" cy="60" r="34" fill="#FFC857"/><circle cx="150" cy="80" r="18" fill="#fff"/>${lines(20,130,130)}`),
+ 'jt-1':()=>ART['static-1'](),
+ 'jt-2':()=>svg('0 0 200 200','#FAF7F2',`<rect x="16" y="16" width="168" height="168" rx="18" fill="#14112B"/><circle cx="100" cy="76" r="34" fill="#6C4DFF"/><circle cx="128" cy="96" r="20" fill="#27D3B0"/>${lines(34,128,120)}<path d="M150 168l14-8-14-8" stroke="#FF6B57" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="80" cy="172" r="3" fill="#fff"/><circle cx="92" cy="172" r="3" fill="#fff" opacity=".4"/><circle cx="104" cy="172" r="3" fill="#fff" opacity=".4"/>`),
+ 'jt-3':()=>svg('0 0 200 260','#EFE9DF',`<rect x="14" y="20" width="172" height="220" rx="14" fill="#fff"/><circle cx="36" cy="44" r="12" fill="#6C4DFF"/><rect x="54" y="36" width="70" height="8" rx="4" fill="#14112B"/><rect x="54" y="50" width="44" height="6" rx="3" fill="#B5B1D3"/><rect x="26" y="74" width="148" height="80" rx="10" fill="#14112B"/><circle cx="60" cy="114" r="20" fill="#27D3B0"/><rect x="90" y="100" width="70" height="10" rx="5" fill="#fff"/><rect x="90" y="118" width="50" height="8" rx="4" fill="#fff" opacity=".5"/><rect x="26" y="170" width="140" height="8" rx="4" fill="#B5B1D3"/><rect x="26" y="186" width="110" height="8" rx="4" fill="#B5B1D3"/><rect x="26" y="210" width="40" height="14" rx="7" fill="#FF6B57"/>`),
+ 'seo-sheet':()=>{let r='';for(let i=0;i<8;i++){const y=64+i*24,w=[150,110,170,90,130,160,100,140][i];r+=`<rect x="20" y="${y}" width="${w}" height="10" rx="5" fill="#14112B" opacity=".75"/><rect x="220" y="${y}" width="46" height="10" rx="5" fill="${['#6C4DFF','#FF6B57','#27D3B0'][i%3]}"/><rect x="290" y="${y}" width="${[60,40,74,52,66,44,70,56][i]}" height="10" rx="5" fill="#B5B1D3"/><line x1="20" x2="380" y1="${y+16}" y2="${y+16}" stroke="#EFE9DF"/>`}
+  return svg('0 0 400 280','#fff',`<rect width="400" height="40" fill="#6C4DFF"/><rect x="20" y="15" width="90" height="10" rx="5" fill="#fff"/><rect x="220" y="15" width="46" height="10" rx="5" fill="#fff" opacity=".6"/><rect x="290" y="15" width="70" height="10" rx="5" fill="#fff" opacity=".6"/>${r}`)}
+};
+[1,2,3,4].forEach(i=>ART['slide-'+i]=()=>svg('0 0 200 200',['#6C4DFF','#FF6B57','#27D3B0','#14112B'][i-1],`<circle cx="${40+i*30}" cy="${50+i*10}" r="${26+i*4}" fill="${['#FFC857','#fff','#14112B','#FF6B57'][i-1]}" opacity=".9"/>${lines(20,120,120,i==3?'#14112B':'#fff')}${[1,2,3,4].map(k=>`<circle cx="${20+k*12}" cy="176" r="3.5" fill="${i==3?'#14112B':'#fff'}" opacity="${k==i?1:.4}"/>`).join('')}<path d="M164 172l10-6-10-6" stroke="${i==3?'#14112B':'#fff'}" stroke-width="4" fill="none" stroke-linecap="round"/>`));
+document.querySelectorAll('.ph[data-img]').forEach(box=>{const f=ART[box.dataset.img];if(!f)return;box.innerHTML=f()+'<span style="position:absolute;left:8px;bottom:8px;background:rgba(20,17,43,.75);color:#fff;font-size:10px;font-weight:600;padding:3px 9px;border-radius:99px">Illustration</span>';box.style.cssText='padding:0;overflow:hidden;position:relative;border:0'});
+// Screenshots: put files in the images/ folder named as in data-img (e.g. images/seo-sheet.jpg). .jpg .png .webp all work.
+document.querySelectorAll('.ph[data-img]').forEach(box=>{
+  const n=box.dataset.img,exts=['jpg','jpeg','png','webp'];
+  (function tryNext(i){ if(i>=exts.length) return;
+    const im=new Image(); im.src=`images/${n}.${exts[i]}`;
+    im.onload=()=>{box.innerHTML='';box.style.cssText='padding:0;border:0;overflow:hidden;min-height:0';im.style.cssText='width:100%;height:100%;object-fit:cover;display:block';im.alt=n;box.appendChild(im)};
+    im.onerror=()=>tryNext(i+1);
+  })(0);
+});
+
+// Decorative abstract art (not work samples)
+const T=[['#6C4DFF','#FF6B57','#27D3B0','#FFC857'],['#FF6B57','#14112B','#FFC857','#6C4DFF'],['#27D3B0','#6C4DFF','#14112B','#FF6B57'],['#14112B','#27D3B0','#FF6B57','#FFC857']];
+document.getElementById('art').innerHTML=T.map((c,i)=>`<div class="tile rv" style="--d:${i*.1}s"><svg viewBox="0 0 200 250" preserveAspectRatio="xMidYMid slice"><rect width="200" height="250" fill="${c[0]}"/><circle cx="${60+i*20}" cy="80" r="52" fill="${c[1]}"/><rect x="${90-i*12}" y="120" width="90" height="90" rx="${i%2?45:16}" fill="${c[2]}"/><circle cx="150" cy="${50+i*14}" r="22" fill="${c[3]}"/><path d="M20 225 Q60 ${190-i*8} 100 225 T180 225" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" opacity=".8"/></svg></div>`).join('');
+// reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv,.tag').forEach(e=>io.observe(e));
+</script>
+</body>
+</html>
