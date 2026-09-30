@@ -135,6 +135,14 @@ footer{background:var(--ink);color:#9C98B8;font-size:12px;padding:26px 0;text-al
 .webs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
 .webs .shot img{aspect-ratio:1890/846;object-fit:cover}
 @media(max-width:860px){.webs{grid-template-columns:1fr}}
+
+#rsm{position:fixed;inset:0;z-index:9999;background:rgba(20,17,43,.97);display:none;flex-direction:column;align-items:center}
+#rsm.on{display:flex}
+#rsm .bar{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 20px;background:#14112B}
+#rsm .bar b{color:#fff;font-size:15px}#rsm .bar div{display:flex;gap:10px;align-items:center}
+#rsm .x{background:transparent;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:999px;padding:9px 16px;font:600 12px inherit;font-family:inherit;cursor:pointer;letter-spacing:.5px}
+#rsm .pg{flex:1;width:100%;overflow:auto;padding:20px 12px 40px;-webkit-overflow-scrolling:touch}
+#rsm .pg img{display:block;width:min(900px,100%);height:auto;margin:0 auto 18px;background:#fff;border-radius:6px;box-shadow:0 10px 40px rgba(0,0,0,.35)}
 </style>
 </head>
 <body>
@@ -182,7 +190,8 @@ footer{background:var(--ink);color:#9C98B8;font-size:12px;padding:26px 0;text-al
 
 <section class="vio contact" id="contact"><div class="blob" style="width:300px;height:300px;background:var(--coral);right:-60px;top:-60px"></div><div class="wrap" style="position:relative"><div class="tag rv" style="color:#fff">Let's work together</div><h2 class="rv">Thank you.</h2><p class="mut rv" style="color:#fff;font-size:22px">I don't just know digital marketing. I have actually worked on it.</p>
 <div class="card rv" style="margin-top:34px;max-width:560px"><h3>SOFIYA BANO</h3><p>SEO · Social Media · Content · Digital Marketing</p><p style="margin-top:10px" id="contact-line">Email: [add your email] &nbsp; Phone: [add your number]</p></div>
-<div class="btns"><a class="btn k" href="https://docs.google.com/spreadsheets/d/1h7BHhCMQOz3woXLFWzBk3YTHoMi5LQMrNT3ntf021fI/edit?gid=1046290858#gid=1046290858" target="_blank" rel="noopener">View SEO Work</a><a class="btn k" href="https://jigrotech.com/" target="_blank" rel="noopener">View JigroTech</a></div></div></section>
+<div class="btns"><a class="btn k" href="https://docs.google.com/spreadsheets/d/1h7BHhCMQOz3woXLFWzBk3YTHoMi5LQMrNT3ntf021fI/edit?gid=1046290858#gid=1046290858" target="_blank" rel="noopener">View SEO Work</a><a class="btn k" href="https://jigrotech.com/" target="_blank" rel="noopener">View JigroTech</a><a class="btn k" id="resume-btn" href="resume.pdf" target="_blank" rel="noopener">View Resume</a></div></div></section>
+<div id="rsm" role="dialog" aria-modal="true" aria-label="Resume"><div class="bar"><b>Sofiya Bano · Resume</b><div><a class="btn s w" id="rsm-dl" href="resume.pdf" download="Sofiya-Bano-Resume.pdf">Download PDF</a><button class="x" id="rsm-x" type="button">CLOSE ✕</button></div></div><div class="pg"><img src="images/resume-1.jpg" alt="Resume page 1" loading="lazy"><img src="images/resume-2.jpg" alt="Resume page 2" loading="lazy"></div></div>
 <footer>SOFIYA BANO · DIGITAL MARKETING PORTFOLIO</footer>
 
 <script>
@@ -226,6 +235,14 @@ $('tabs').innerHTML=chips(['Console Insights','Metrics','Keywords Rank','LinkedI
 // reveal on scroll
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.rv,.tag').forEach(e=>io.observe(e));
+</script>
+<script>
+(function(){var m=document.getElementById('rsm'),b=document.getElementById('resume-btn');
+function o(e){e.preventDefault();m.classList.add('on');document.body.style.overflow='hidden'}
+function c(){m.classList.remove('on');document.body.style.overflow=''}
+b.addEventListener('click',o);document.getElementById('rsm-x').addEventListener('click',c);
+document.addEventListener('keydown',function(e){if(e.key==='Escape')c()});
+m.addEventListener('click',function(e){if(e.target===m)c()});})();
 </script>
 </body>
 </html>
